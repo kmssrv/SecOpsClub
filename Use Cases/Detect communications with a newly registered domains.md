@@ -71,7 +71,7 @@ Describes which actions should be taken with the information provided - typicall
 
 
 # Engineering
-
+![Screenshot](schema.png)
 The necessary steps and content construction that fulfills the use case. If the entire monitoring/alerting solution were replaced, this section should allow complete reconstruction.
 
 
