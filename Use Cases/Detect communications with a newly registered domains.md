@@ -48,7 +48,7 @@ List applicable compliance items this use case aims to partially or fully meet.
 
 ## MITRE ATT&CK Framework
 
-Describes which of the Mitre ATT&CK Framework Tactics/Techniques the objectives should allow detection of.
+https://attack.mitre.org/tactics/TA0011/
 
 ## Assumptions and Limitations
 
@@ -119,4 +119,4 @@ Specific actions to reproduce events that are expected to be detected/highlighte
 
 
 ## References and Resources
-Any useful resources or references that can help understand the vulnerability, attack, detection, affected software, protocols, etc.
+https://unit42.paloaltonetworks.com/newly-registered-domains-malicious-abuse-by-bad-actors/
