@@ -36,7 +36,7 @@ In order to collect Windows DNS analytic events, you need to install an HTTP col
 sc create SilkService binPath= "C:\SilkService\SilkService.exe" start=demand
 ```
 5. Change startup options if needed and start the service.
-6. Check log in `C:\SilkService\Logs\ServiceLog_*
+6. Check log in `C:\SilkService\Logs\ServiceLog_*`
 ```
 [+] SilkService started at: 4/24/2023 6:22:28 AM
 [+] Collector ID: 8eb39099-118f-4a72-a2d0-05a961e11990; Parameter validation success
