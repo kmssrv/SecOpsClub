@@ -19,7 +19,7 @@ https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-serve
 
 ## Check logging configuration
 If the configuration is OK, then the ETL log analytics will be available in the Windows Event Viewer.
-![[win_events.png]]
+![Windows DNS Server Events](img/win_events.png)
 # Install Collector
 
 ## KUMA 2.1
@@ -51,7 +51,7 @@ sc create SilkService binPath= "C:\SilkService\SilkService.exe" start=demand
 # Check events
 ## KUMA 2.1
 Navigate to the collector events, and you will find analytical events from Windows DNS Server.
-![[kuma_events.png]]
+![KUMA Events](img/kuma_events.png)
 # Known issues
 If the KUMA collector is stopped, the Silk service will also stop and will not auto-start after the KUMA collector is run.
 
