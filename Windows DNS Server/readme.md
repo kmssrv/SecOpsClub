@@ -6,6 +6,7 @@
 Enhanced Windows DNS Event Log logging is available from Event Tracing for Windows providers. There are two event categories:
 1. Windows DNS Server Audit Events
 2. Windows DNS Server Analytical Events
+
 The main advantage of using this method is that ETW events can be read directly without requiring events to be first written to disk.
 The article discusses the steps and settings required for configuring the transmission of analytical events in a SIEM solution, including event forwarding and related configurations.
 
