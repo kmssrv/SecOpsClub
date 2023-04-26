@@ -64,3 +64,6 @@ https://docs.nxlog.co/userguide/integrate/dns-monitoring-windows.html#collecting
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc776361(v=ws.10)
 #### Select and enable debug logging options on the DNS server
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc759581(v=ws.10) 
+
+# Are you ready to use open source, not enterprise, tools in a production environment?
+[A one-question poll](https://www.surveymonkey.com/r/LXRVRBN)
