@@ -42,3 +42,6 @@ Step 1:
 Step 2:
 
 ![Kaspersky CyberTrace - Step 2](img/002.png)
+
+5. Please wait for a while, and you will soon observe new detections with PT feed indicators (means that the integration of KUMA with CyberTrace and event enrichment has been set up correctly).
+![Kaspersky CyberTrace - Detections](img/003.png)
