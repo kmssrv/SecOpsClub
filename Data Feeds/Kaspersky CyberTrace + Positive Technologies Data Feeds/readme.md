@@ -33,7 +33,8 @@ pt-short-lived-ips.json | jq '.[].value'
 "154.9.226.59"
 ...
 ```
-4. Go to Kaspersky CyberTrace web console -> Settings -> Feeds -> Add custom feed.
+4. Add a task to the cron job scheduler for automatic downloading of PT data feeds.
+5. Go to Kaspersky CyberTrace web console -> Settings -> Feeds -> Add custom feed.
 
 Step 1:
 
@@ -43,5 +44,5 @@ Step 2:
 
 ![Kaspersky CyberTrace - Step 2](img/002.png)
 
-5. Please wait for a while, and you will soon observe new detections with PT feed indicators (means that the integration of KUMA with CyberTrace and event enrichment has been set up correctly).
+6. Please wait for a while, and you will soon observe new detections with PT feed indicators (means that the integration of KUMA with CyberTrace and event enrichment has been set up correctly).
 ![Kaspersky CyberTrace - Detections](img/003.png)
