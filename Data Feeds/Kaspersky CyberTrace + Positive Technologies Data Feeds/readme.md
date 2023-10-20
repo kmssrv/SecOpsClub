@@ -33,3 +33,8 @@ pt-short-lived-ips.json | jq '.[].value'
 "154.9.226.59"
 ...
 ```
+4. Go to Kaspersky CyberTrace web console -> Settings -> Feeds -> Add custom feed.
+Step 1:
+![Kaspersky CyberTrace - Step 1](img/001.png)
+Step 2:
+![Kaspersky CyberTrace - Step 2](img/002.png)
