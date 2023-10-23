@@ -29,6 +29,7 @@ tmpfs                170M     0  170M   0% /run/user/0
 `mkdir /temp`
 ### Backup all data in /home
 Copy data from /home to /temp. Preserves the ownership, timestamps, symbolic links, and permissions while copying files and directories.
+
 `cp -a /home/ /temp`
 ### Unmount /home
 `umount /home
