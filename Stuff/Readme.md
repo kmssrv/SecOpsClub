@@ -26,10 +26,10 @@ tmpfs                847M     0  847M   0% /sys/fs/cgroup
 tmpfs                170M     0  170M   0% /run/user/0
 ```
 ### Create a temporary directory
-`mkdir /temp
+`mkdir /temp`
 ### Backup all data in /home
 Copy data from /home to /temp. Preserves the ownership, timestamps, symbolic links, and permissions while copying files and directories.
-`cp -a /home/ /temp
+`cp -a /home/ /temp`
 ### Unmount /home
 `umount /home
 ### Remove the logical volume
@@ -43,24 +43,25 @@ swap ol -wi-ao---- 1.60g
 ```
 
 **Remove LV home**
-`lvremove /dev/ol/home
 
-You may get error "Logical volume ol/home contains a filesystem in use. Cannot deactivate logical volume ol/home". The error message you're seeing indicates that the logical volume ol/home contains a filesystem that is currently in use, and therefore, the logical volume cannot be deactivated or removed.
+`lvremove /dev/ol/home`
+
+You may get error "Logical volume ol/home contains a filesystem in use. Cannot deactivate logical volume ol/home". The error message you're seeing indicates that the logical volume `ol/home contains` a filesystem that is currently in use, and therefore, the logical volume cannot be deactivated or removed.
 
 To resolve this issue, you need to ensure that the filesystem on the logical volume is unmounted before you attempt to remove the logical volume. Follow these steps:
 
 **Find out what is using the filesystem:** First, determine which processes are using the filesystem on the logical volume. You can use the `lsof` command to find out which processes have open files on the logical volume. For example:
-`lsof /dev/ol/home
+`lsof /dev/ol/home`
 
 This will show you the processes and files that are currently using the logical volume.
 
 **Unmount the filesystem:** If you find that processes are using the filesystem, you need to unmount it. Use the `umount` command:
-`umount /dev/ol/home
+`umount /dev/ol/home`
 
 This command unmounts the filesystem, allowing you to proceed with deactivating or removing the logical volume.
 
 Now try to remove logical volume once again
-`lvremove /dev/ol/home
+`lvremove /dev/ol/home`
 ### Recreate the LV with the desired size
 ```
 lvcreate -L 1G -n home ol
@@ -96,7 +97,7 @@ xfs_growfs /dev/mapper/ol-root
 ### Rebuild the initramfs files
 `dracut --regenerate-all --force`
 ### Restore data from the temporary directory to /home
-`cp -a /temp/home/ /
+`cp -a /temp/home/ /`
 
 ### After
 ```
