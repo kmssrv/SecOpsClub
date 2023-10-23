@@ -87,6 +87,12 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ### Mount the resized /home
 `mount /dev/ol/home /home/`
 
+### Extend /root
+```
+lvextend -l+100%FREE /dev/ol/root
+xfs_growfs /dev/mapper/ol-root
+```
+
 ### Rebuild the initramfs files
 `dracut --regenerate-all --force`
 ### Restore data from the temporary directory to /home
@@ -100,9 +106,9 @@ devtmpfs             828M     0  828M   0% /dev
 tmpfs                847M     0  847M   0% /dev/shm
 tmpfs                847M   17M  831M   2% /run
 tmpfs                847M     0  847M   0% /sys/fs/cgroup
-/dev/mapper/ol-root  4.7G  2.4G  2.4G  50% /
+/dev/mapper/ol-root  8.4G  2.4G  6.0G  29% /
 /dev/sda2           1014M  256M  759M  26% /boot
 /dev/sda1            599M  5.1M  594M   1% /boot/efi
 tmpfs                170M     0  170M   0% /run/user/0
-/dev/mapper/ol-home 1014M   40M  975M   4% /home
+/dev/mapper/ol-home 1014M   66M  975M   4% /home
 ```
