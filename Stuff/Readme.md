@@ -1,4 +1,4 @@
-# How to shrink `/home` and extend `/root` in XFS File System using LVM
+# How to shrink /home and extend /root in XFS File System using LVM
 ## Bad news
 XFS File System does not support shrinking in 2023.
 ## Good news
