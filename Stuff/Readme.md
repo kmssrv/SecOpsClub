@@ -32,7 +32,7 @@ Copy data from /home to /temp. Preserves the ownership, timestamps, symbolic lin
 
 `cp -a /home/ /temp`
 ### Unmount /home
-`umount /home
+`umount /home`
 ### Remove the logical volume
 **Check LV name**
 ```
@@ -62,6 +62,7 @@ This will show you the processes and files that are currently using the logical 
 This command unmounts the filesystem, allowing you to proceed with deactivating or removing the logical volume.
 
 Now try to remove logical volume once again
+
 `lvremove /dev/ol/home`
 ### Recreate the LV with the desired size
 ```
