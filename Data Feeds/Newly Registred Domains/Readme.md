@@ -10,6 +10,3 @@ Threat actors often prefer to use newly registered domains (NRDs) as a means to 
 
 ### Newly Registered Domains: Malicious Abuse by Bad Actors - Unit 42 - Palo Alto Networks
 https://unit42.paloaltonetworks.com/newly-registered-domains-malicious-abuse-by-bad-actors/
-
-
-`
