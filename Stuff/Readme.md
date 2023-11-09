@@ -47,7 +47,7 @@ swap ol -wi-ao---- 1.60g
 
 `lvremove /dev/ol/home`
 
-You may get error "Logical volume ol/home contains a filesystem in use. Cannot deactivate logical volume ol/home". The error message you're seeing indicates that the logical volume `ol/home contains` a filesystem that is currently in use, and therefore, the logical volume cannot be deactivated or removed.
+You may get error "Logical volume ol/home contains a filesystem in use. Cannot deactivate logical volume ol/home". The error message you're seeing indicates that the logical volume `ol/home` contains a filesystem that is currently in use, and therefore, the logical volume cannot be deactivated or removed.
 
 To resolve this issue, you need to ensure that the filesystem on the logical volume is unmounted before you attempt to remove the logical volume. Follow these steps:
 
